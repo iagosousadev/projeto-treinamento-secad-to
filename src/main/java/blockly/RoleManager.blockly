@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="JAVA" bpmnAble="false" formTarget="" resourceType="JAVA" ruleDescription="RoleManager" ruleName="RoleManager" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false" swagger="false">
+  <metadata scale="1" scrollx="409.2" scrolly="-130.00000000000003" target="(pXpGW,E@_Q%hC/A5)#?"/>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-382" y="158">
+    <mutation>
+      <arg id="e6bedf99" name="Entidade&amp;lt;app.entity.Role&amp;gt;"/>
+    </mutation>
+    <field customattributes="" name="NAME">BeforeInsert</field>
+    <comment h="80" pinned="false" w="160">RoleManager</comment>
+    <value name="RETURN">
+      <block asynccall="false" colour="#913487" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="2ctO`pJL4ouRnsEF},ai" multilayer="false" namespace="cronapi.authentication.Operations.beforeInsert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAntes%20de%20Inserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20executado%20antes%20de%20inserir%20um%20registro%20na%20entidade%20Role%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.beforeInsert%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+        <mutation name="{{cronapi.authentication.Operations.beforeInsert}}" return-raw-type="cronapi.Var">
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.UNKNOWN" name="Entidade"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="]76/!xIB{g?=]$lyo:74" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">Entidade&lt;app.entity.Role&gt;</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#995ba5" id="(pXpGW,E@_Q%hC/A5)#?" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-330" y="170">
+    <mutation>
+      <arg id="75ee9924" name="Entidade&amp;lt;app.entity.Role&amp;gt;"/>
+    </mutation>
+    <field customattributes="" name="NAME">BeforeUpdate</field>
+    <comment h="80" pinned="false" w="160">RoleManager</comment>
+    <value name="RETURN">
+      <block asynccall="false" colour="#913487" dependencyby="(pXpGW,E@_Q%hC/A5)#?" id="3r$Z!U*4~sVtC=tq`!yD" multilayer="false" namespace="cronapi.authentication.Operations.beforeUpdate" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAntes%20de%20Atualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20executado%20antes%20de%20atualizar%20um%20registro%20na%20entidade%20Role%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.beforeUpdate%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+        <mutation name="{{cronapi.authentication.Operations.beforeUpdate}}" return-raw-type="cronapi.Var">
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.UNKNOWN" name="Entidade"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#0088ee" dependencyby="(pXpGW,E@_Q%hC/A5)#?" id="LVr4.%+@qXqs9$,ep9|Y" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">Entidade&lt;app.entity.Role&gt;</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="+r]1Lo!.J653Rmwpg.qL" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-427" y="203">
+    <mutation>
+      <arg id="989c607f" name="Entidade&amp;lt;app.entity.Role&amp;gt;"/>
+    </mutation>
+    <field customattributes="" name="NAME">Normalize</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <value name="RETURN">
+      <block asynccall="false" colour="#913487" dependencyby="+r]1Lo!.J653Rmwpg.qL" id="F0vaVdbo*+=@:Era)*R." multilayer="false" namespace="cronapi.authentication.Operations.normalize" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ENormalizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20para%20normalizar%20o%20campo%20'name'%20da%20entidade%20Fun%EF%BF%BD%EF%BF%BDo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.normalize%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+        <mutation name="{{cronapi.authentication.Operations.normalize}}" return-raw-type="cronapi.Var">
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.UNKNOWN" name="Entidade"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#0088ee" dependencyby="+r]1Lo!.J653Rmwpg.qL" id="g-CG6F{_w.Cj?V}`IvVI" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">Entidade&lt;app.entity.Role&gt;</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</blockly>

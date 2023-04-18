@@ -1,0 +1,96 @@
+{
+  "audit": true,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "applicationUser",
+  "defaultValues": {
+    "id": null,
+    "application": null,
+    "user": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "application": null,
+    "user": null
+  },
+  "entityFullName": "app.entity.ApplicationUser",
+  "entitySimpleName": "ApplicationUser",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isValid": true,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "au",
+        "entity": "ApplicationUser",
+        "namespace": "app.entity.ApplicationUser"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "au",
+        "func": "get"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Gerenciador de Aplicações de Usuários",
+  "queryParamsValues": [],
+  "security": {
+    "id": null,
+    "application": null,
+    "user": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/appUserManager/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": [
+      "Administrators"
+    ],
+    "DELETE": true,
+    "DELETEAuthorities": [
+      "Administrators"
+    ],
+    "FILTER": true,
+    "FILTERAuthorities": [
+      "Administrators"
+    ],
+    "GET": true,
+    "GETAuthorities": [
+      "Administrators"
+    ],
+    "POST": true,
+    "POSTAuthorities": [
+      "Administrators"
+    ],
+    "PUT": true,
+    "PUTAuthorities": [
+      "Administrators"
+    ]
+  }
+}

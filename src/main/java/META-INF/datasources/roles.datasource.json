@@ -1,0 +1,143 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "roles",
+  "defaultValues": {
+    "application": null,
+    "builtIn": null,
+    "id": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "defaultValuesProperties": {
+    "application": null,
+    "builtIn": null,
+    "id": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "entityFullName": "app.entity.Role",
+  "entitySimpleName": "Role",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "u.user.normalizedUserName",
+          "id": "u.user.normalizedUserName",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":login",
+          "valueIsField": false
+        },
+        {
+          "condition": "OR",
+          "not": false,
+          "rules": [
+            {
+              "field": "u.role.application",
+              "id": "u.role.application",
+              "input": "text",
+              "operator": "is_null",
+              "type": "string",
+              "value": null,
+              "valueIsField": false
+            },
+            {
+              "field": "u.role.application.id",
+              "id": "u.role.application.id",
+              "input": "text",
+              "operator": "equal",
+              "type": "string",
+              "value": ":applicationId",
+              "valueIsField": false
+            }
+          ]
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "u",
+        "entity": "UserRole",
+        "namespace": "app.entity.UserRole"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "u.role.normalizedName",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Obter Autorização",
+  "queryParamsValues": [
+    {
+      "fieldName": "login",
+      "fieldValue": ""
+    },
+    {
+      "fieldName": "applicationId",
+      "fieldValue": "expression:${application.id}"
+    }
+  ],
+  "security": {
+    "application": null,
+    "builtIn": null,
+    "id": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/roles/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": false,
+    "COUNTAuthorities": null,
+    "DELETE": false,
+    "DELETEAuthorities": null,
+    "FILTER": false,
+    "FILTERAuthorities": null,
+    "GET": false,
+    "GETAuthorities": null,
+    "POST": false,
+    "POSTAuthorities": null,
+    "PUT": false,
+    "PUTAuthorities": null
+  }
+}

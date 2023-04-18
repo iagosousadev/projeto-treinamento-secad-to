@@ -1,0 +1,65 @@
+<div class="bg">
+    <div class="container-full">
+        <div class="container-fluid" id="container-fluid">
+            <div class="row component-holder siginPanel" id="component-holder">
+                <div class="login-view col-sm-7 col-xs-10 col-lg-4 col-md-4">
+                    <form class="form-validation ng-pristine ng-valid ng-valid-required" autocomplete="off" name="form" ng-submit="signup()" role="form">
+                        <h1 class="text-center title titulo_card" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-signup">{{'Signup.view.Signup' | translate}}</h1>
+
+                        <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-signupemail">
+                            <div class="form-group">
+                                <label for="signupEmail" class="ng-binding">
+                                    {{'Signup.view.Email' | translate}}
+                                </label>
+                                <input type="email" mask="" mask-placeholder="" ng-required="false" ng-model="signupEmail.value" id="signupEmail" class="form-control k-textbox ng-pristine ng-untouched ng-valid ng-empty ng-valid-required" placeholder="" autocomplete="email" autocorrect="off" autocapitalize="off">
+                            </div>
+                        </div>
+
+                        <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-signupusername">
+                            <div class="form-group">
+                                <label for="signupUsername" class="ng-binding">
+                                    {{'Signup.view.Username' | translate}}
+                                </label>
+                                <input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="signupUsername.value" id="signupUsername" class="form-control k-textbox ng-pristine ng-untouched ng-valid ng-empty ng-valid-required" placeholder="" autocomplete="username" autocorrect="off" autocapitalize="off">
+                            </div>
+                        </div>
+
+                        <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-signuppassword">
+                            <div class="form-group">
+                                <label for="signupPassword" class="ng-binding">
+                                    {{'Users.view.Senha' | translate}}
+                                </label>
+                                <input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="signupPassword.value" id="signupPassword" class="form-control k-textbox ng-pristine ng-untouched ng-valid ng-empty ng-valid-required" placeholder="" autocomplete="password" autocorrect="off" autocapitalize="off">
+                            </div>
+                        </div>
+
+                        <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-signupconfirmpassword">
+                            <div class="form-group">
+                                <label for="signupConfirmPassword" class="ng-binding">
+                                    {{'Users.view.ConfirmeSuaSenha' | translate}}
+                                </label>
+                                <input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="signupConfirmPassword.value" id="signupConfirmPassword" class="form-control k-textbox ng-pristine ng-untouched ng-valid ng-empty ng-valid-required" placeholder="" autocomplete="confirm-password" autocorrect="off" autocapitalize="off">
+                            </div>
+                        </div>
+
+                        <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-button">
+                            <div class="messages">
+                                <div ng-show="message.error" class="help-block ng-binding ng-hide" data-container="true"> </div>
+                            </div>
+                            <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-signup-register"> 
+                                <button class="btn k-button btn-block btn-default crn-button-signup-register" role="button" aria-label="{{'Signup.view.Register' | translate}}"type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="cronapi.client('js.blockly.UserControl.signUp').names('ec5dbe32', '62cce53e', 'd42229ad', 'a49023f3').run(signupUsername.value, signupEmail.value, signupPassword.value, signupConfirmPassword.value)" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                                    <span class="" text-theme="">{{'Signup.view.Register' | translate}}</span>
+                                </button> 
+                            </div>
+                            <a href="#" class="cron-link component-holder col-md-12 col-xs-12 crn-anchor-signup-back" target="_self" data-replace="true" data-component="crn-anchor" id="crn-anchor-signupback" style="text-align: center;">
+                                {{'Signup.view.Back' | translate}}
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'./views/public/privacy/cookies.view.html'"></div>

@@ -1,0 +1,96 @@
+{
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "customId": "device",
+  "defaultValues": {
+    "id": null,
+    "token": null
+  },
+  "entityFullName": "app.entity.Device",
+  "entitySimpleName": "Device",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": true,
+    "operationType": "object",
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "d.id",
+          "id": "d.id",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":id",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "d",
+        "entity": "Device",
+        "namespace": "app.entity.Device"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "d",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Atualizar Dispositivos",
+  "queryParamsValues": [
+    {
+      "fieldName": "id",
+      "fieldValue": ""
+    }
+  ],
+  "screen": "",
+  "security": {
+    "id": null,
+    "token": null
+  },
+  "serviceUrl": "api/cronapi/query/1jy88nt41afza/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": false,
+    "COUNTAuthorities": null,
+    "DELETE": false,
+    "DELETEAuthorities": null,
+    "FILTER": false,
+    "FILTERAuthorities": null,
+    "GET": false,
+    "GETAuthorities": null,
+    "POST": false,
+    "POSTAuthorities": null,
+    "PUT": false,
+    "PUTAuthorities": null
+  }
+}

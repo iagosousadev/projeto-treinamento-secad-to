@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="MOBILE" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Home" ruleName="Home" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false" swagger="false">
+  <metadata scale="1" scrollx="480.9000000000003" scrolly="-57.10000000000002" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Creates a function with an output." type="procedures_defreturn" x="-350" y="130">
+    <field customattributes="" name="NAME">change</field>
+    <comment h="80" pinned="false" w="160">Home</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="C64:Kr.pP(l[^$O(+m8$" multilayer="true" namespace="cronapi.util.changeViewMain" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3EName:%3C/strong%3E%3Cdiv%3EChange%20Main%20Route%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescription:%3C/strong%3E%3Cdiv%3EChange%20to%20default%20route%20defined%20in%20project%20settings%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EHelp:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:80/help?type=blockly&amp;amp;id=cronapi.util.changeViewMain%22%3EHelp%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.util.changeViewMain}}" return-raw-type="undefined"/>
+      </block>
+    </statement>
+  </block>
+</blockly>

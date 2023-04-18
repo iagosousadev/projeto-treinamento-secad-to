@@ -1,0 +1,50 @@
+<h1><strong>Arquitetura</strong></h1>
+
+<p>O projeto&nbsp;utiliza&nbsp;o&nbsp;<a href="https://pt.wikipedia.org/wiki/MVC">MVC</a> (Model-View-Controller) como arquitetura principal. O MVC &eacute; um padr&atilde;o de projeto muito utilizados em sistemas web e foca na reusabilidade de c&oacute;digo. Por utilizar o m&oacute;dulo <a href="https://spring.io/projects/spring-boot">Spring Boot</a> do <a href="https://spring.io/projects/spring-framework">Spring Framework</a>, s&atilde;o divididos em 4 camadas, como veremos a seguir.</p>
+
+<h1>Camadas</h1>
+
+<p>O projeto &eacute; dividido em 4 camadas distintas que se comunicam entre si na seguinte ordem: <strong>apresenta&ccedil;&atilde;o</strong> (<em>presentation</em>), <strong>regra de neg&oacute;cios</strong> (<em>business</em>), <strong>persist&ecirc;ncia</strong> (<em>persistence</em>) e <strong>banco de dados</strong> (<em>database</em>). A seguir veremos a defini&ccedil;&atilde;o de cada camada (Figura 1).</p>
+
+<p>&nbsp;</p>
+
+<p><img src="img/layers.png" style="margin-left:auto; margin-right:auto" /></p>
+
+<p><strong>Figura 1 - Divis&atilde;o das camadas&nbsp;</strong></p>
+
+<p>&nbsp;</p>
+
+<h2>Apresenta&ccedil;&atilde;o</h2>
+
+<p>A primeira camada &eacute; respons&aacute;vel por fazer a comunica&ccedil;&atilde;o entre o usu&aacute;rio e o sistema por meio de uma <a href="https://docs.cronapp.io/display/CRON2/Editor+de+views">interface</a> ou <em>front-end</em>. Ela trata diretamente as requisi&ccedil;&otilde;es HTTPS incluindo a primeira etapa da autentica&ccedil;&atilde;o, e repassa para a camada seguinte, regra de neg&oacute;cios.</p>
+
+<p>Em nosso projeto essa camada est&aacute; localizada nas pastas <strong>mobile </strong>(localiza&ccedil;&atilde;o: <code>Formul&aacute;rios/mobile/ </code><span style="color:null"> </span> ) e <strong>web</strong>&nbsp;(localiza&ccedil;&atilde;o: <code>Formul&aacute;rios/web/ </code><span style="color:null"> </span> ) e o tratamento das requisi&ccedil;&otilde;es HTTPS &eacute; feito de forma <em>low-code</em> a partir <a href="https://docs.cronapp.io/display/CRON2/Fonte+de+Dados">Fonte de dados</a>.</p>
+
+<h2>Regra de neg&oacute;cios</h2>
+
+<p>Aqui encontra-se toda a l&oacute;gica de neg&oacute;cio do sistema, respons&aacute;vel por fazer valida&ccedil;&otilde;es (ex.: o CPF informado pelo usu&aacute;rio &eacute; v&aacute;lido?), Autoriza&ccedil;&atilde;o (ex.: o usu&aacute;rio e senha informado pelo usu&aacute;rio est&aacute; correto?) e ser um meio termo entre as camadas de apresenta&ccedil;&atilde;o e persist&ecirc;ncia.</p>
+
+<p>No Cronapp, essa camada &eacute; feita a partir dos <a href="https://docs.cronapp.io/pages/viewpage.action?pageId=185959641">blocos de programa&ccedil;&atilde;o</a> <strong>Servidor</strong> (localiza&ccedil;&atilde;o: <code>Bloco de programa&ccedil;&atilde;o/Servidor&nbsp;</code><span style="color:null"> </span> ) que converte seu conte&uacute;do em classes Java.</p>
+
+<h2>Persist&ecirc;ncia</h2>
+
+<p>Cont&eacute;m as estruturas de classes do sistema e a l&oacute;gica de armazenamento que permite fazer a comunica&ccedil;&atilde;o entre a camada de regra de neg&oacute;cio e o banco de dados.</p>
+
+<p>Por padr&atilde;o, essa camada encontra-se no diret&oacute;rio <strong>app</strong> (Endere&ccedil;o: <code>src/main/java/app</code>), por&eacute;m novas camadas de persist&ecirc;ncias podem ser criadas a partir do <a href="https://docs.cronapp.io/display/CRON2/Diagrama">Diagrama de dados</a>.</p>
+
+<h2>Banco de dados</h2>
+
+<p>A &uacute;ltima camada &eacute; a de banco de dados, onde todos os dados gerados pelo sistema ser&atilde;o armazenados. No Cronapp, a comunica&ccedil;&atilde;o com o banco de dados &eacute; feita a partir da funcionalidade <a href="https://docs.cronapp.io/display/CRON2/Diagrama">Banco de dados</a>.</p>
+
+<h2>Refer&ecirc;ncias</h2>
+
+<ol>
+	<li>API</li>
+	<li>JavaDoc</li>
+	<li>JsDoc</li>
+	<li>BPM</li>
+	<li>Diagramas de Dados</li>
+	<li>Dicion&aacute;rio de Dados</li>
+</ol>
+
+<p>&nbsp;</p>

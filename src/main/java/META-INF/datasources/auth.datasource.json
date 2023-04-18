@@ -1,0 +1,120 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "auth",
+  "defaultValues": {
+    "accessFailedCount": null,
+    "email": null,
+    "emailConfirmed": null,
+    "id": null,
+    "lockoutEnabled": null,
+    "lockoutEnd": null,
+    "name": null,
+    "normalizedEmail": null,
+    "normalizedUserName": null,
+    "password": null,
+    "passwordHistory": null,
+    "phoneNumber": null,
+    "phoneNumberConfirmed": null,
+    "picture": null,
+    "securityStamp": null,
+    "theme": null,
+    "twoFactorEnabled": null,
+    "userName": null
+  },
+  "defaultValuesProperties": {
+    "accessFailedCount": null,
+    "email": null,
+    "emailConfirmed": null,
+    "id": null,
+    "lockoutEnabled": null,
+    "lockoutEnd": null,
+    "name": null,
+    "normalizedEmail": null,
+    "normalizedUserName": null,
+    "password": null,
+    "passwordHistory": null,
+    "phoneNumber": null,
+    "phoneNumberConfirmed": null,
+    "picture": null,
+    "securityStamp": null,
+    "theme": null,
+    "twoFactorEnabled": null,
+    "userName": null
+  },
+  "entityFullName": "app.entity.User",
+  "entitySimpleName": "User",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": true,
+    "isRawSql": true,
+    "multiTenant": false,
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "sqlContent": "select u \nfrom User u \nwhere (u.normalizedUserName \u003d :login or u.normalizedEmail \u003d :login)\n  and (\n        exists(select ur\n               from UserRole ur\n               where ur.user.normalizedUserName \u003d u.normalizedUserName\n                 and exists(select rs\n                            from RoleSecurable rs\n                            where rs.role.normalizedName \u003d ur.role.normalizedName\n                              and rs.securable.name \u003d \u0027Administrators\u0027))\n       or \n       exists(select au from ApplicationUser au \n              where au.application.id \u003d :applicationId \n                and au.user.normalizedUserName \u003d u.normalizedUserName)\n  )"
+  },
+  "queryName": "Autenticar",
+  "queryParamsValues": [
+    {
+      "fieldName": "login",
+      "fieldValue": ""
+    },
+    {
+      "fieldName": "applicationId",
+      "fieldValue": "expression:${application.id}"
+    }
+  ],
+  "security": {
+    "accessFailedCount": null,
+    "email": null,
+    "emailConfirmed": null,
+    "id": null,
+    "lockoutEnabled": null,
+    "lockoutEnd": null,
+    "name": null,
+    "normalizedEmail": null,
+    "normalizedUserName": null,
+    "password": null,
+    "passwordHistory": null,
+    "phoneNumber": null,
+    "phoneNumberConfirmed": null,
+    "picture": null,
+    "securityStamp": null,
+    "theme": null,
+    "twoFactorEnabled": null,
+    "userName": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/auth/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": false,
+    "COUNTAuthorities": null,
+    "DELETE": false,
+    "DELETEAuthorities": null,
+    "FILTER": false,
+    "FILTERAuthorities": null,
+    "GET": false,
+    "GETAuthorities": null,
+    "POST": false,
+    "POSTAuthorities": null,
+    "PUT": false,
+    "PUTAuthorities": null
+  }
+}

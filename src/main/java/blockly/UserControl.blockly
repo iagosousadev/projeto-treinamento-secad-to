@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="JAVA" bpmnAble="false" formTarget="src/main/webapp/views/login.view.html" resourceType="JAVA" ruleDescription="SignupApp" ruleName="SignupApp" ruleSecurity="{&quot;post&quot;:&quot;Public&quot;,&quot;get&quot;:&quot;Public&quot;,&quot;execute&quot;:&quot;Public&quot;,&quot;delete&quot;:&quot;Public&quot;,&quot;put&quot;:&quot;Public&quot;}" ruleSynchronous="false" ruleTimeout="300" ruleType="I" soap="false" swagger="false">
+  <metadata scale="1" scrollx="561.2" scrolly="-813" target="xRtxYB`3Vlb`gT.:;Y3~"/>
+  <block asynccall="false" colour="#fca03b" id="xRtxYB`3Vlb`gT.:;Y3~" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-532" y="848">
+    <mutation>
+      <arg id="b7d52451" name="username"/>
+      <arg id="36bc1157" name="email"/>
+      <arg id="097625e0" name="password"/>
+    </mutation>
+    <field customattributes="" name="NAME">signUp</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <value name="RETURN">
+      <block asynccall="false" colour="#913487" dependencyby="xRtxYB`3Vlb`gT.:;Y3~" id="*MYg,o{.uEnPNw1dja}v" multilayer="false" namespace="cronapi.authentication.Operations.defaultSignUp" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInscrever-se%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EMapa%20com%20os%20Campos%20do%20Usu%C3%A1rio:%20Exemplo%20-&amp;gt;%20username:%20%22Cronapp%22,%20email:%20%22cronapp@teste.com.br%22%20e%20etc%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%20com%20os%20Campos%20do%20Usu%C3%A1rio%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Exemplo%20-&amp;gt;%20username:%20%22Cronapp%22,%20email:%20%22cronapp@teste.com.br%22%20e%20etc%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.defaultSignUp%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+        <mutation name="{{cronapi.authentication.Operations.defaultSignUp}}" return-raw-type="cronapi.Var">
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.MAP" name="Mapa com os Campos do Usuário"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#917731" dependencyby="xRtxYB`3Vlb`gT.:;Y3~" id="9NtTt-*T]gw{1{?2bnWU" multilayer="false" namespace="cronapi.map.Operations.createObjectMapWith" origintype="maps_create_with" output="true" returntype="ObjectType.MAP" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Valor(es)%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Valores%20a%20serem%20adicionados%20na%20cria%C3%A7%C3%A3o%20do%20mapa%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%3C/a%3E%3C/div%3E%3C/div%3E" type="maps_create_with">
+            <mutation name="{{cronapi.map.Operations.createObjectMapWith}}">
+              <arg name="username"/>
+              <arg name="name"/>
+              <arg name="email"/>
+              <arg name="password"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#0088ee" dependencyby="xRtxYB`3Vlb`gT.:;Y3~" id="`}8Y#Eq4I^IWu,}usKNn" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field customattributes="" name="VAR">username</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block asynccall="false" colour="#0088ee" dependencyby="xRtxYB`3Vlb`gT.:;Y3~" id="p,ZpemZTC7=Gz*o{pZDF" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field customattributes="" name="VAR">username</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block asynccall="false" colour="#0088ee" dependencyby="xRtxYB`3Vlb`gT.:;Y3~" id="WG2+b:0Uk`5i~G9!6-pm" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field customattributes="" name="VAR">email</field>
+              </block>
+            </value>
+            <value name="ARG3">
+              <block asynccall="false" colour="#0088ee" dependencyby="xRtxYB`3Vlb`gT.:;Y3~" id="l:I4!U8x%s_6zGY5Q,NF" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field customattributes="" name="VAR">password</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="l5c8},$Wxk9,VvSCb1$*" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-409" y="873">
+    <mutation>
+      <arg id="53fc1de9" name="email"/>
+      <arg id="b11110b2" name="isMobile"/>
+    </mutation>
+    <field customattributes="" name="NAME">resetPassword</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <value name="RETURN">
+      <block asynccall="false" colour="#913487" dependencyby="l5c8},$Wxk9,VvSCb1$*" id="*dH_QIx(Dv7LL;KQH-C!" multilayer="false" namespace="cronapi.authentication.Operations.defaultResetPassword" origintype="procedures_callreturn" output="true" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EResetar%20Senha%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20os%20usu%C3%A1rios%20resetarem%20sua%20senha%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20E-mail%20do%20Usu%C3%A1rio%20registrado%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Imagem%20Topo%20do%20E-mail%20:%20Texto%3C/span%3E%3Cdiv%3E%20Endere%C3%A7o%20da%20imagem,%20ex%20-&amp;gt;%20https://acesso.cronapp.io/img/header.png%3C/div%3E%3Cspan%3E%20-%20Imagem%20Rodap%C3%A9%20do%20E-mail%20:%20Texto%3C/span%3E%3Cdiv%3E%20Endere%C3%A7o%20da%20imagem,%20ex%20-&amp;gt;%20https://acesso.cronapp.io/img/footer.png%3C/div%3E%3Cspan%3E%20-%20useOneTimePassword%20:%20L%C3%B3gico%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.defaultResetPassword%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+        <mutation name="{{cronapi.authentication.Operations.defaultResetPassword}}" return-raw-type="cronapi.Var">
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="E-mail do Usuário registrado"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Imagem Topo do E-mail"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Imagem Rodapé do E-mail"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.BOOLEAN" name="useOneTimePassword"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="l5c8},$Wxk9,VvSCb1$*" id="ub_{YC}vC/E]C@rp6k#D" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="l5c8},$Wxk9,VvSCb1$*" id="].Ngk8qc;,`;Vf(PZGC2" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">email</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="l5c8},$Wxk9,VvSCb1$*" id="J::(cQ0J8;MNI[?%josf" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">https://acesso.cronapp.io/img/header.png</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="l5c8},$Wxk9,VvSCb1$*" id="OR`O-6aSXP-S/WrP@l:R" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">https://acesso.cronapp.io/img/footer.png</field>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <block asynccall="false" colour="#0088ee" dependencyby="l5c8},$Wxk9,VvSCb1$*" id="0W6T~PTZ^UV}0kJFr7Xe" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">isMobile</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</blockly>

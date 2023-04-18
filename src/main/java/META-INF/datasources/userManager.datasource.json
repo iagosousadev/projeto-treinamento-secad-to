@@ -1,0 +1,271 @@
+{
+  "audit": true,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "userManager",
+  "defaultValues": {
+    "accessFailedCount": null,
+    "email": null,
+    "emailConfirmed": null,
+    "id": null,
+    "lockoutEnabled": null,
+    "lockoutEnd": null,
+    "name": null,
+    "normalizedEmail": null,
+    "normalizedUserName": null,
+    "password": null,
+    "phoneNumber": null,
+    "phoneNumberConfirmed": null,
+    "picture": null,
+    "securityStamp": null,
+    "theme": null,
+    "twoFactorEnabled": null,
+    "userName": null
+  },
+  "defaultValuesProperties": {
+    "accessFailedCount": null,
+    "email": null,
+    "emailConfirmed": null,
+    "id": null,
+    "lockoutEnabled": null,
+    "lockoutEnd": null,
+    "name": null,
+    "normalizedEmail": null,
+    "normalizedUserName": null,
+    "password": null,
+    "phoneNumber": null,
+    "phoneNumberConfirmed": null,
+    "picture": null,
+    "securityStamp": null,
+    "theme": null,
+    "twoFactorEnabled": null,
+    "userName": null
+  },
+  "entityFullName": "app.entity.User",
+  "entitySimpleName": "User",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": {
+      "type": "server",
+      "blocklyMethod": "BeforeDelete",
+      "blocklyClass": "blockly.UserManager",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;app.entity.User\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.UserManaer",
+        "sourcePath": "src/main/java/blockly/UserManager.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "BeforeUpdate",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "BeforeInsert",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "BeforeDelete",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "Normalize",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "EncryptPassword",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeInsert": {
+      "blocklyClass": "blockly.UserManager",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "Normalize",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "BeforeUpdate",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "BeforeInsert",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.UserManager",
+        "sourcePath": "src/main/java/blockly/UserManager.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "BeforeInsert",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;app.entity.User\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "beforeUpdate": {
+      "blocklyClass": "blockly.UserManager",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "Normalize",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "BeforeUpdate",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "BeforeInsert",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.UserManager",
+        "sourcePath": "src/main/java/blockly/UserManager.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "BeforeUpdate",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;app.entity.User\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isValid": true,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "u",
+        "entity": "User",
+        "namespace": "app.entity.User"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "u",
+        "func": "get"
+      }
+    ]
+  },
+  "queryName": "Gerenciador de Usuários",
+  "queryParamsValues": [],
+  "security": {
+    "accessFailedCount": null,
+    "email": null,
+    "emailConfirmed": null,
+    "id": null,
+    "lockoutEnabled": null,
+    "lockoutEnd": null,
+    "name": null,
+    "normalizedEmail": null,
+    "normalizedUserName": null,
+    "password": null,
+    "phoneNumber": null,
+    "phoneNumberConfirmed": null,
+    "picture": null,
+    "securityStamp": null,
+    "theme": null,
+    "twoFactorEnabled": null,
+    "userName": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/userManager/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": [
+      "Administrators"
+    ],
+    "DELETE": true,
+    "DELETEAuthorities": [
+      "Administrators"
+    ],
+    "FILTER": true,
+    "FILTERAuthorities": [
+      "Administrators"
+    ],
+    "GET": true,
+    "GETAuthorities": [
+      "Administrators"
+    ],
+    "POST": true,
+    "POSTAuthorities": [
+      "Administrators"
+    ],
+    "PUT": true,
+    "PUTAuthorities": [
+      "Administrators"
+    ]
+  }
+}

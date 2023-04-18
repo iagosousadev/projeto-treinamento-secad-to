@@ -1,0 +1,104 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "auditlogquery",
+  "defaultValues": {
+    "affectedFields": null,
+    "agent": null,
+    "command": null,
+    "date": null,
+    "host": null,
+    "id": null,
+    "objectData": null,
+    "server": null,
+    "type": null,
+    "user": null
+  },
+  "defaultValuesProperties": {
+    "affectedFields": null,
+    "agent": null,
+    "command": null,
+    "date": null,
+    "host": null,
+    "id": null,
+    "objectData": null,
+    "server": null,
+    "type": null,
+    "user": null
+  },
+  "entityFullName": "app.entity.AuditLog",
+  "entitySimpleName": "AuditLog",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isValid": true,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "a",
+        "entity": "AuditLog",
+        "namespace": "app.entity.AuditLog"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "a",
+        "func": "get"
+      }
+    ]
+  },
+  "queryName": "Auditoria em Log",
+  "queryParamsValues": [],
+  "security": {
+    "affectedFields": null,
+    "agent": null,
+    "command": null,
+    "date": null,
+    "host": null,
+    "id": null,
+    "objectData": null,
+    "server": null,
+    "type": null,
+    "user": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/auditlogquery/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": false,
+    "COUNTAuthorities": null,
+    "DELETE": false,
+    "DELETEAuthorities": null,
+    "FILTER": false,
+    "FILTERAuthorities": null,
+    "GET": false,
+    "GETAuthorities": null,
+    "POST": false,
+    "POSTAuthorities": null,
+    "PUT": false,
+    "PUTAuthorities": null
+  }
+}

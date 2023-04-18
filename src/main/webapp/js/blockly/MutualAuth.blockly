@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="WEB" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="MutualAuth" ruleName="MutualAuth" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false" swagger="false">
+  <metadata scale="1" scrollx="375.7000000000001" scrolly="-130" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-296" y="170">
+    <field customattributes="" name="NAME">login</field>
+    <comment h="80" pinned="false" w="160">MutualAuth</comment>
+    <statement name="STACK">
+      <block asynccall="true" colour="#4d7d55" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="S?.9xNEdmhXddl*qF3{7" multilayer="false" namespace="cronapi.authentication.mutualLogin" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ELogin%20para%20Autentica%C3%A7%C3%A3o%20M%C3%BAtua%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%C3%A3o%20destinado%20para%20realizar%20o%20Login%20de%20um%20usu%C3%A1rio%20utilizando%20Autentica%C3%A7%C3%A3o%20M%C3%BAtua%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.mutualLogin%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.authentication.mutualLogin}}" return-raw-type="undefined"/>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="Bi2SqOJ%yv0]I#HrBJN8" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-262" y="173">
+    <field customattributes="" name="NAME">signup</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="true" colour="#4d7d55" dependencyby="Bi2SqOJ%yv0]I#HrBJN8" id="qy:I~T?(f:g}lXP/y[pR" multilayer="false" namespace="cronapi.authentication.mutualSignup" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ERegistre-se%20para%20Autentica%C3%A7%C3%A3o%20M%C3%BAtua%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%C3%A3o%20destinado%20para%20realizar%20o%20Cadastro%20de%20um%20usu%C3%A1rio%20utilizando%20Autentica%C3%A7%C3%A3o%20M%C3%BAtua%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.mutualSignup%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.authentication.mutualSignup}}" return-raw-type="undefined"/>
+      </block>
+    </statement>
+  </block>
+</blockly>

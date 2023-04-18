@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Server",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "org.apache.catalina.startup.Bootstrap",
+      "args": "start",
+      "projectName": "io.cronapp.apps.projetotreinamentosecad"
+    },
+    {
+      "type": "java",
+      "name": "SpringBootMain:run",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "SpringBootMain",
+      "args": "${mvn spring-boot:run}",
+      "projectName": "io.cronapp.apps.projetotreinamentosecad"
+    }
+  ]
+}

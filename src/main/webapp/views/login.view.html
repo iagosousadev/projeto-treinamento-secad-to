@@ -1,0 +1,119 @@
+<div class="bg">
+    <div class="container-full">
+        <div class="container-fluid" id="container-fluid">
+            <div class="row component-holder siginPanel" id="component-holder">
+                <div class="login-view col-sm-7 col-xs-10 col-lg-4 col-md-4">
+
+                    <form class="form-validation ng-pristine ng-valid ng-valid-required" autocomplete="off" name="form" ng-submit="login()" role="form">
+
+                        <input type="hidden" name="csrf_token" value="CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz" class="col-md-12">
+                        <div class="text-danger wrapper text-center col-md-12" ng-show="authError"></div>
+                        <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-image" id="crn-image-login">
+                            <h1>
+                                <img alt="Login" src="node_modules/cronapp-framework-js/img/cronapp-logo-login.png"
+                                     class="" style="display:block; width:60%; height:auto; margin-left:auto; margin-right:auto;"
+                                     xattr-position="margin-left:auto; margin-right:auto;" data-component="crn-image">
+                            </h1>
+                        </div>
+
+                        
+                            <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-loginusername">
+                                <div class="form-group">
+                                    <label for="input-login-username">{{'Login.view.Username' | translate}}</label>
+                                    <input type="text" mask="" mask-placeholder="" ng-required="false"
+                                           ng-model="username.value" class="form-control k-textbox" id="input-login-username"
+                                           placeholder="" autocomplete="username" autocorrect="off" autocapitalize="off">
+                                </div>
+                            </div>
+
+                            <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-loginpassword" style="margin-bottom: 1px;">
+                                <div class="form-group">
+                                    <label for="input-login-password">{{'Login.view.Password' | translate}}</label>
+                                    <input type="password" mask="" mask-placeholder="" ng-required="false"
+                                           ng-model="password.value" class="form-control k-textbox" id="input-login-password"
+                                           autocomplete="current-password" placeholder="">
+                                </div>
+                            </div>
+
+                            <a ng-click="cronapi.screen.showModal('forgotPasswordModal')" class="reset-password cron-link component-holder col-xs-12  col-md-12" target="_self"
+                               data-replace="true" data-component="crn-anchor" id="crn-botao-cadastre">{{'ResetPassword' | translate}}
+                            </a>
+
+
+                        <div class="messages">
+                            <div ng-show="message.error" class="help-block" data-container="true">
+                                {{message.error}}
+                            </div>
+                        </div>
+                            <div class="component-holder ng-scope col-xs-12 col-md-12" data-component="crn-button" id="crn-button-login">
+                                <button aria-label="{{'Login.view.Login' | translate}}" class="btn k-button btn-block btn-default" type="submit"
+                                ng-disabled="form.$invalid || vm.dataLoading" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                                    <span class="" text-theme="">{{"Login.view.Login" | translate}}</span>
+                                </button>
+                            </div>
+                            <a href="#/public/signup" class="sign-up cron-link component-holder col-md-12 col-xs-12"
+                                target="_self" data-replace="true" data-component="crn-anchor" id="crn-anchor-login-signup">
+                                {{'Signup.view.Signup' | translate}}
+                            </a>
+
+                    </form>
+                    <div class="" data-container="true"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade" id="forgotPasswordModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
+                    <h2 class="modal-title">{{'ForgotPassword' | translate}}</h2>
+                </div>
+                <div class="modal-body">
+                    <form class="form-validation" autocomplete="off" name="forgotPasswordForm" role="form">
+                        <input type="hidden" name="csrf_token" value="CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz">
+                        <div class="text-danger wrapper text-center" ng-show="authError">
+                        </div>
+                        <div class="list-group list-group-sm">
+                            <div class="">
+                                <label for="forgotPasswordEmail">
+                                    {{'ForgotPasswordEmail' | translate}}
+                                </label>
+                                <input type="email" class="form-control k-textbox" id="forgotPasswordEmail"
+                                       aria-label="{{'ForgotPasswordEmail' | translate}}" ng-required="true"
+                                       ng-model="forgotPasswordEmail.value"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="component-holder ng-scope col-md-12" data-component="crn-button" id="crn-button-save">
+                        <button class="btn k-button btn-primary" type="submit"
+                            ng-click="cronapi.client('js.blockly.UserControl.resetPassword').names('7afdf898').run(forgotPasswordEmail.value)" xattr-fullsize=""
+                            aria-label="{{'Save' | translate}}" xattr-theme="btn-primary" xattr-disabled="" ng-disabled="form.$invalid || vm.dataLoading">
+                            <i class="glyphicon glyphicon-ok"></i>
+                            <span>{{'Save' | translate}}</span>
+                        </button>
+                    </div>
+                    <div class="component-holder ng-scope col-md-12" data-component="crn-button" id="crn-button-close">
+                        <button class="btn k-button btn-danger" type="button" data-dismiss="modal"
+                            xattr-fullsize="" aria-label="{{'Home.view.Close' | translate}}" xattr-theme="btn-danger"
+                            xattr-disabled="">
+                            <i class="glyphicon glyphicon-remove"></i>
+                            <span>{{'Home.view.Close' | translate}}</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div ng-include="'./views/public/privacy/cookies.view.html'"></div>

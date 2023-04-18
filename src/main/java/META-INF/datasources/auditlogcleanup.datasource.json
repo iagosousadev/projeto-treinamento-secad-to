@@ -1,0 +1,103 @@
+{
+  "customId": "auditlogcleanup",
+  "queryName": "Limpeza AuditLog",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "AuditLog",
+  "entityFullName": "app.entity.AuditLog",
+  "query": {
+    "isEmpty": true,
+    "isRawSql": true,
+    "sqlContent": "delete from AuditLog a where a.date \u003c :date",
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "date",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "type": null,
+    "command": null,
+    "date": null,
+    "objectData": null,
+    "user": null,
+    "host": null,
+    "agent": null,
+    "server": null,
+    "affectedFields": null,
+    "category": null,
+    "application": null,
+    "error": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "type": null,
+    "command": null,
+    "date": null,
+    "objectData": null,
+    "user": null,
+    "host": null,
+    "agent": null,
+    "server": null,
+    "affectedFields": null,
+    "category": null,
+    "application": null,
+    "error": null
+  },
+  "security": {
+    "id": null,
+    "type": null,
+    "command": null,
+    "date": null,
+    "objectData": null,
+    "user": null,
+    "host": null,
+    "agent": null,
+    "server": null,
+    "affectedFields": null,
+    "category": null,
+    "application": null,
+    "error": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query794613/",
+  "audit": false
+}

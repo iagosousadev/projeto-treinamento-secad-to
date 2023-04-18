@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="MOBILE" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Signup" ruleName="Signup" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false" swagger="false">
+  <metadata scale="1" scrollx="401.70000000000016" scrolly="-372.9999999999999" target="#a1-7y`U@j%+ZTcx`FD5"/>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-252" y="226">
+    <mutation>
+      <arg id="8df902ea" name="signupUsername"/>
+      <arg id="0c25d725" name="signupEmail"/>
+      <arg id="9c203fbf" name="signupPassword"/>
+      <arg id="067b073b" name="signupConfirmPassword"/>
+    </mutation>
+    <field customattributes="" name="NAME">signUp</field>
+    <comment h="80" pinned="false" w="160">Signup</comment>
+    <statement name="STACK">
+      <block asynccall="true" colour="#4d7d55" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=";n{B*9Kf7t)Jroa!2R(U" multilayer="false" namespace="cronapi.authentication.signup" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ERegistre-se%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%C3%A3o%20destinado%20para%20realizar%20o%20cadastro%20do%20usu%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20do%20usu%C3%A1rio%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20E-mail%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Senha%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Confirma%C3%A7%C3%A3o%20de%20Senha%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.signup%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.authentication.signup}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Nome do usuário"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="E-mail"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Senha"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Confirmação de Senha"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*vKN05B#|@`W^?~K;drH" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="yina$[t?FJ3UI!ku~l+(" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">signupUsername</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7S@?7cRO0I@tNe,{f~Pn" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="p4m=dP$!gT;!gW2,*v0t" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">signupEmail</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="W5xNOh3,(Bg/(wcILF6O" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="_6*2%%y{(1Jp$2n4^c`M" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">signupPassword</field>
+          </block>
+        </value>
+        <value name="ARG3">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="STfwU!T$g(~h`]JY*ZvZ" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7rRGv9aXl1q1Y|e1*Mjq" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">signupConfirmPassword</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="$k!IxSHq$B`}X*s/@biD" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-337" y="233">
+    <mutation>
+      <arg id="7b9f3909" name="email"/>
+    </mutation>
+    <field customattributes="" name="NAME">resetPassword</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#4d7d55" dependencyby="$k!IxSHq$B`}X*s/@biD" id=".ctLvqK(98a?QG]Jw2f+" multilayer="false" namespace="cronapi.authentication.resetPasswordWithOTP" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ERedefinir%20Senha%20com%20OTP%20(One%20Time%20Password)%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%C3%A3o%20destinado%20para%20Redefinir%20Senha%20com%20OTP%20(One%20Time%20Password)%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20E-mail%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.resetPasswordWithOTP%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.authentication.resetPasswordWithOTP}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="E-mail"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="$k!IxSHq$B`}X*s/@biD" id="#|lZ$m]i!P-.%TGCDHD," origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="$k!IxSHq$B`}X*s/@biD" id="!*ct5vc8iBD7?o$ET+*#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">email</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="#a1-7y`U@j%+ZTcx`FD5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-487" y="413">
+    <mutation>
+      <arg id="be2325de" name="signupUsername"/>
+      <arg id="dc667925" name="signupEmail"/>
+      <arg id="9a49950f" name="signupPassword"/>
+      <arg id="f6fdc12c" name="signupConfirmPassword"/>
+    </mutation>
+    <field customattributes="" name="NAME">isValidSignup</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <value name="RETURN">
+      <block asynccall="false" colour="#4d7d55" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="bDyqrEuKo[54dkQQG2c^" multilayer="false" namespace="cronapi.authentication.isValidSignup" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EValida%C3%A7%C3%A3o%20para%20o%20Cadastro%20de%20Usu%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%C3%A3o%20destinado%20para%20a%20valida%C3%A7%C3%A3o%20do%20cadastro%20de%20usu%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20do%20usu%C3%A1rio%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20E-mail%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Senha%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Confirma%C3%A7%C3%A3o%20de%20Senha%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.isValidSignup%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+        <mutation name="{{cronapi.authentication.isValidSignup}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Nome do usuário"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="E-mail"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Senha"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Confirmação de Senha"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="Hg$$q+PnsM/b;B`w`AC+" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="*EJU2}DY.qV2sB3LsY:4" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">signupUsername</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="o5(%]|0%mnjf{]j:si2t" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="Re3-LH[blRp=4,Bf7(AF" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">signupEmail</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="yF`-biz#A#Bm4DUkFwt!" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="0{zuZz8Pg2K9=$h]#J?o" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">signupPassword</field>
+          </block>
+        </value>
+        <value name="ARG3">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="P?2g15j}A:a:vp{+j{?/" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="#a1-7y`U@j%+ZTcx`FD5" id="l{4cm@M{Afw,~#s(w2BK" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">signupConfirmPassword</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</blockly>

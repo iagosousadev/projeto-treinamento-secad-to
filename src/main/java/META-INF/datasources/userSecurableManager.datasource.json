@@ -1,0 +1,127 @@
+{
+  "audit": true,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "userSecurableManager",
+  "defaultValues": {
+    "id": null,
+    "securable": null,
+    "user": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "securable": null,
+    "user": null
+  },
+  "entityFullName": "app.entity.UserSecurable",
+  "entitySimpleName": "UserSecurable",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "OR",
+      "not": false,
+      "rules": [
+        {
+          "field": "u.securable.application.id",
+          "id": "u.securable.application.id",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":applicationId",
+          "valueIsField": false
+        },
+        {
+          "field": "u.securable.application",
+          "id": "u.securable.application",
+          "input": "text",
+          "operator": "is_null",
+          "type": "string",
+          "value": null,
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "u",
+        "entity": "UserSecurable",
+        "namespace": "app.entity.UserSecurable"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "u",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Gerenciador de Permissionáveis de Usuários",
+  "queryParamsValues": [
+    {
+      "fieldName": "applicationId",
+      "fieldValue": "expression:${application.id}"
+    }
+  ],
+  "security": {
+    "id": null,
+    "securable": null,
+    "user": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/userSecurableManager/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": [
+      "Administrators"
+    ],
+    "DELETE": true,
+    "DELETEAuthorities": [
+      "Administrators"
+    ],
+    "FILTER": true,
+    "FILTERAuthorities": [
+      "Administrators"
+    ],
+    "GET": true,
+    "GETAuthorities": [
+      "Administrators"
+    ],
+    "POST": true,
+    "POSTAuthorities": [
+      "Administrators"
+    ],
+    "PUT": true,
+    "PUTAuthorities": [
+      "Administrators"
+    ]
+  }
+}

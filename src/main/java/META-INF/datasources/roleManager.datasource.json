@@ -1,0 +1,255 @@
+{
+  "audit": true,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "roleManager",
+  "defaultValues": {
+    "application": {
+      "type": "server",
+      "blocklyMethod": "Current",
+      "blocklyClass": "blockly.Application",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Application",
+        "sourcePath": "src/main/java/blockly/Application.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "Current",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "builtIn": null,
+    "id": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "defaultValuesProperties": {
+    "application": null,
+    "builtIn": null,
+    "id": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "entityFullName": "app.entity.Role",
+  "entitySimpleName": "Role",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": {
+      "blocklyClass": "blockly.RoleManager",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "BeforeInsert",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "BeforeUpdate",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "Normalize",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.RoleManager",
+        "sourcePath": "src/main/java/blockly/RoleManager.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "BeforeInsert",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;app.entity.Role\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "beforeUpdate": {
+      "blocklyClass": "blockly.RoleManager",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "BeforeInsert",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "BeforeUpdate",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "Normalize",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.RoleManager",
+        "sourcePath": "src/main/java/blockly/RoleManager.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "BeforeUpdate",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;app.entity.Role\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "r.membershipEnabled",
+          "id": "r.membershipEnabled",
+          "input": "text",
+          "operator": "equal",
+          "type": "boolean",
+          "value": "true",
+          "valueIsField": false
+        },
+        {
+          "condition": "OR",
+          "not": false,
+          "rules": [
+            {
+              "field": "r.application.id",
+              "id": "r.application.id",
+              "input": "text",
+              "operator": "equal",
+              "type": "string",
+              "value": ":applicationId",
+              "valueIsField": false
+            },
+            {
+              "field": "r.application",
+              "id": "r.application",
+              "input": "text",
+              "operator": "is_null",
+              "type": "string",
+              "value": null,
+              "valueIsField": false
+            }
+          ]
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "r",
+        "entity": "Role",
+        "namespace": "app.entity.Role"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "r",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Gerenciador de Papéis",
+  "queryParamsValues": [
+    {
+      "fieldName": "applicationId",
+      "fieldValue": "expression:${application.id}"
+    }
+  ],
+  "security": {
+    "application": null,
+    "builtIn": null,
+    "id": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/roleManager/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": [
+      "Administrators"
+    ],
+    "DELETE": true,
+    "DELETEAuthorities": [
+      "Administrators"
+    ],
+    "FILTER": true,
+    "FILTERAuthorities": [
+      "Administrators"
+    ],
+    "GET": true,
+    "GETAuthorities": [
+      "Administrators"
+    ],
+    "POST": true,
+    "POSTAuthorities": [
+      "Administrators"
+    ],
+    "PUT": true,
+    "PUTAuthorities": [
+      "Administrators"
+    ]
+  }
+}

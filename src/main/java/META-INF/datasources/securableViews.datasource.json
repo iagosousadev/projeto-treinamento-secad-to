@@ -1,0 +1,186 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "securableViews",
+  "defaultValues": {
+    "application": null,
+    "deleteMethodAllowed": null,
+    "getMethodAllowed": null,
+    "headMethodAllowed": null,
+    "id": null,
+    "optionsMethodAllowed": null,
+    "patchMethodAllowed": null,
+    "pattern": null,
+    "postMethodAllowed": null,
+    "putMethodAllowed": null,
+    "securable": null,
+    "traceMethodAllowed": null
+  },
+  "defaultValuesProperties": {
+    "application": null,
+    "deleteMethodAllowed": null,
+    "getMethodAllowed": null,
+    "headMethodAllowed": null,
+    "id": null,
+    "optionsMethodAllowed": null,
+    "patchMethodAllowed": null,
+    "pattern": null,
+    "postMethodAllowed": null,
+    "putMethodAllowed": null,
+    "securable": null,
+    "traceMethodAllowed": null
+  },
+  "entityFullName": "app.entity.View",
+  "entitySimpleName": "View",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "v.securable.name",
+          "id": "v.securable.name",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":securableName",
+          "valueIsField": false
+        },
+        {
+          "condition": "OR",
+          "not": false,
+          "rules": [
+            {
+              "field": "v.securable.application",
+              "id": "v.securable.application",
+              "input": "text",
+              "operator": "is_null",
+              "type": "string",
+              "value": null,
+              "valueIsField": false
+            },
+            {
+              "field": "v.securable.application.id",
+              "id": "v.securable.application.id",
+              "input": "text",
+              "operator": "equal",
+              "type": "string",
+              "value": ":applicationId",
+              "valueIsField": false
+            }
+          ]
+        },
+        {
+          "condition": "OR",
+          "not": false,
+          "rules": [
+            {
+              "field": "v.application",
+              "id": "v.application",
+              "input": "text",
+              "operator": "is_null",
+              "type": "string",
+              "value": null,
+              "valueIsField": false
+            },
+            {
+              "field": "v.application.id",
+              "id": "v.application.id",
+              "input": "text",
+              "operator": "equal",
+              "type": "string",
+              "value": ":applicationId",
+              "valueIsField": false
+            }
+          ]
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "v",
+        "entity": "View",
+        "name": "View",
+        "namespace": "app.entity.View"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "v",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Obter Views do Permissionável",
+  "queryParamsValues": [
+    {
+      "fieldName": "securableName",
+      "fieldValue": ""
+    },
+    {
+      "fieldName": "applicationId",
+      "fieldValue": "expression:${application.id}"
+    }
+  ],
+  "security": {
+    "application": null,
+    "deleteMethodAllowed": null,
+    "getMethodAllowed": null,
+    "headMethodAllowed": null,
+    "id": null,
+    "optionsMethodAllowed": null,
+    "patchMethodAllowed": null,
+    "pattern": null,
+    "postMethodAllowed": null,
+    "putMethodAllowed": null,
+    "securable": null,
+    "traceMethodAllowed": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/securableViews/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": false,
+    "COUNTAuthorities": null,
+    "DELETE": false,
+    "DELETEAuthorities": null,
+    "FILTER": false,
+    "FILTERAuthorities": null,
+    "GET": false,
+    "GETAuthorities": null,
+    "POST": false,
+    "POSTAuthorities": null,
+    "PUT": false,
+    "PUTAuthorities": null
+  }
+}

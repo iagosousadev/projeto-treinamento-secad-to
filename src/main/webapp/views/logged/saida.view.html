@@ -1,0 +1,95 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="" primary-datasource="Saida">
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-96935">Saida</h1>
+<datasource data-component="crn-datasource" filter="" name="Saida" entity="app.query781816" keys="_objectKey" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;produto&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;quantidade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;user_name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;produto_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="" lazy="true" parameters="" dependent-lazy-post="" checkrequired=""></datasource>
+
+        <div role="search" ng-hide="Saida.inserting || Saida.editing" data-component="crn-textinput" id="crn-datasource-filter-general96935" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<section ng-hide="Saida.editing || Saida.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;Saida&quot;,&quot;entity&quot;:&quot;app.Saida&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.Saida&quot;,&quot;customId&quot;:&quot;Saida&quot;,&quot;name&quot;:&quot;Saida&quot;,&quot;customQueryName&quot;:&quot;app.Saida&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.Saida&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;produto&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;quantidade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;user_name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;produto_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;keys&quot;:&quot;_objectKey&quot;,&quot;rowsPerPage&quot;:&quot;100&quot;,&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;produto&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;quantidade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;user_name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;produto_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;parameters&quot;:&quot;&quot;,&quot;condition&quot;:&quot;{\&quot;maxRecord\&quot;:100,\&quot;params\&quot;:[],\&quot;expression\&quot;:{\&quot;type\&quot;:\&quot;OR\&quot;,\&quot;args\&quot;:[{\&quot;type\&quot;:\&quot;=\&quot;,\&quot;left\&quot;:\&quot;quantidade\&quot;,\&quot;right\&quot;:\&quot;{{vars.search|raw}}\&quot;,\&quot;args\&quot;:[]}]}}&quot;,&quot;dependentLazyPost&quot;:&quot;&quot;,&quot;lazy&quot;:&quot;true&quot;,&quot;checkrequired&quot;:&quot;&quot;,&quot;onBeforeCreate&quot;:&quot;&quot;,&quot;onAfterCreate&quot;:&quot;&quot;,&quot;onBeforeUpdate&quot;:&quot;&quot;,&quot;onAfterUpdate&quot;:&quot;&quot;,&quot;onBeforeDelete&quot;:&quot;&quot;,&quot;onAfterDelete&quot;:&quot;&quot;,&quot;onAfterFill&quot;:&quot;&quot;,&quot;dataComponent&quot;:&quot;crn-datasource&quot;,&quot;id&quot;:&quot;&quot;,&quot;oldName&quot;:&quot;&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;batchMode&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;pathView&quot;:&quot;src/main/webapp/views/logged/saida.view.html&quot;,&quot;modelGrid&quot;:&quot;custom&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;produto_nome&quot;,&quot;headerText&quot;:&quot;Produto&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;user_name&quot;,&quot;headerText&quot;:&quot;User Name&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;alignment&quot;:&quot;left&quot;,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;quantidade&quot;,&quot;headerText&quot;:&quot;Quantidade&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[],&quot;fillDatasource&quot;:false,&quot;enableModalSaveAdd&quot;:false}" ng-model="vars.grid96935" class="" style="" scrollable="false">
+    </cron-grid>
+</section>
+
+<div data-component="crn-form" id="crn-form-form-Saida-96935">
+    <section class="form" ng-show="Saida.editing || Saida.inserting">
+        <form crn-datasource="Saida" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startInserting">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startInserting()" aria-label="{{'StartInserting' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-plus" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startEditing">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startEditing()" aria-label="{{'startEditing' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-pencil" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-previous">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.previous()" ng-disabled="!datasource.hasPrevious()" aria-label="{{'Before' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-left" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-next">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.next()" ng-disabled="!datasource.hasNext()" aria-label="{{'Next' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-right" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-remove">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.remove()" aria-label="{{'Remove' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-remove" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_post_96935">
+                    <button class="btn k-button btn-block btn-success btn-fab" ng-click="datasource.post()" aria-label="{{'SaveChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ok" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_cancel_96935">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.cancel()" aria-label="{{'CancelChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ban-circle" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+                        <datasource data-component="crn-datasource" name="ProdutoCombo" entity="app.Produto" keys="_objectKey" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;quantidade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" lazy="true"></datasource>
+
+
+                    <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-produto-96935" class="">
+                        <div class="form-group">
+                                <label for="enterprise-dynamic-combobox-produto" class="">Produto</label>
+                                <cron-dynamic-select id="enterprise-dynamic-combobox-produto" name="enterprise-dynamic-combobox-produto" options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;ProdutoCombo&quot;,&quot;entity&quot;:&quot;app.Produto&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.Produto&quot;,&quot;customId&quot;:&quot;Produto&quot;,&quot;name&quot;:&quot;ProdutoCombo&quot;,&quot;customQueryName&quot;:&quot;app.Produto&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.Produto&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;quantidade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;quantidade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;id&quot;:&quot;app.Produto&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;nome&quot;,&quot;dataValueField&quot;:&quot;_objectKey&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true,&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false}" ng-model="Saida.active.produto" class="crn-select form-control">
+                                </cron-dynamic-select>
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-quantidade-96935" class="">
+                        <div class="form-group">
+                                <label for="textinput-quantidade" class="">Quantidade</label>
+                                <input type="integer" ng-model="Saida.active.quantidade" class="form-control k-textbox" id="textinput-quantidade" placeholder="Quantidade" mask="" mask-placeholder="" ng-required="false">
+                        </div>
+                    </div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </div>
+        </form>
+    </section>
+    <section class="form" ng-show="Saida.editing || Saida.inserting">
+        <form>
+            <div>
+                <!-- OneToN -->
+                <!-- OneToOne  end -->
+            </div>
+        </form>
+    </section>
+</div>
+
+
+</div>

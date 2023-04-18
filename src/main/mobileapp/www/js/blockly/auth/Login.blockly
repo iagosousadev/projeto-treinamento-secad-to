@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="MOBILE" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Login" ruleName="Login" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false" swagger="false">
+  <metadata scale="1" scrollx="432.9" scrolly="-72.99999999999991" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-352" y="113">
+    <mutation>
+      <arg id="73d65812" name="login"/>
+      <arg id="0b973243" name="password"/>
+      <arg id="5ae2f195" name="options"/>
+    </mutation>
+    <field customattributes="" name="NAME">login</field>
+    <comment h="80" pinned="false" w="160">Login</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#4d7d55" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="uiUxENdw~eb2ToT0jQ3w" multilayer="false" namespace="cronapi.authentication.login" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ELogin%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%C3%A3o%20destinado%20para%20o%20Login%20com%20Usu%C3%A1rio%20e%20Senha%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20do%20usu%C3%A1rio%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Senha%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Op%C3%A7%C3%B5es%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.login%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.authentication.login}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Nome do usuário"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Senha"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Opções"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="_VH^{(R]G.9PTWLPOES6" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="+ayT/q_V(*;;hb|X+ZFh" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">login</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="[adM}~Px$JAc5w3FER(%" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="z=Df|*aDL}XLr:V5{.Vf" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">password</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="stm,~Aq{fESWX^}z3Nzv" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">options</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</blockly>

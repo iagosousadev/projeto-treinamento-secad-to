@@ -1,0 +1,134 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "securables",
+  "defaultValues": {
+    "application": null,
+    "id": null,
+    "name": null
+  },
+  "defaultValuesProperties": {
+    "application": null,
+    "id": null,
+    "name": null
+  },
+  "entityFullName": "app.entity.Securable",
+  "entitySimpleName": "Securable",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "s.name",
+          "id": "s.name",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":name",
+          "valueIsField": false
+        },
+        {
+          "condition": "OR",
+          "not": false,
+          "rules": [
+            {
+              "field": "s.application",
+              "id": "s.application",
+              "input": "text",
+              "operator": "is_null",
+              "type": "string",
+              "value": null,
+              "valueIsField": false
+            },
+            {
+              "field": "s.application.id",
+              "id": "s.application.id",
+              "input": "text",
+              "operator": "equal",
+              "type": "string",
+              "value": ":applicationId",
+              "valueIsField": false
+            }
+          ]
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "s",
+        "entity": "Securable",
+        "namespace": "app.entity.Securable"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "s",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Securables",
+  "queryParamsValues": [
+    {
+      "fieldName": "name",
+      "fieldValue": ""
+    },
+    {
+      "fieldName": "applicationId",
+      "fieldValue": "expression:${application.id}"
+    }
+  ],
+  "security": {
+    "application": null,
+    "id": null,
+    "name": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/securables/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": false,
+    "COUNTAuthorities": null,
+    "DELETE": false,
+    "DELETEAuthorities": null,
+    "FILTER": false,
+    "FILTERAuthorities": null,
+    "GET": false,
+    "GETAuthorities": null,
+    "POST": false,
+    "POSTAuthorities": null,
+    "PUT": false,
+    "PUTAuthorities": null
+  }
+}

@@ -1,0 +1,75 @@
+<div id="starter" ng-destroy="" data-component="crn-start" screen-params="" ng-init="cronapi.client('js.blockly.privacy.Cookies.checkCookies').run()">
+    <div class="privacy-view">
+        <div id="dialogCookies" class="dialog-cookies alert alert-dismissible text-center" role="alert" ng-init="">
+            <div class="cookiealert-container">
+                <div class="display-cookiealert">
+                    <p data-component="crn-simple-text" id="crn-simple-text-cookies-advice">{{'Privacy.view.Cookies.Advice' | translate}}</p>
+                    <p data-component="crn-simple-text" id="crn-simple-text-cookies-description-use">🍪 {{'Privacy.view.Cookies.Dialog.DescriptionUse' | translate}}</p>
+                    <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-cookies-accept">
+                        <button class="btn k-button btn-success acceptcookies" ng-click="cronapi.client('js.blockly.privacy.Cookies.setPreference').names().run()" xattr-fullsize="" xattr-theme="btn-success" xattr-disabled="">
+                            <i class="glyphicon glyphicon-ok" icon-theme=""></i>
+                            <span class="" text-theme="">{{'Privacy.view.Cookies.Accept' | translate}}</span>
+                        </button>
+                    </div>
+                </div>
+                <a href="#" ng-click="cronapi.client('js.blockly.privacy.Cookies.openPreferences').names().run()" class="cron-link" target="_self" data-replace="true" data-component="crn-anchor" id="crn-anchor-cookies-open-preferences">{{'Privacy.view.Cookies.Dialog.OpenPreferences' | translate}}</a>
+            </div>
+        </div>
+
+        <div id="modalCookies" class="modal fade col-md-12">
+            <div class="modal-dialog">
+                <div class="modal-cookies modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}"><span aria-hidden="true">×</span></button>
+                        <h1 class="text-center title col-md-12" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-cookies-advice">{{'Privacy.view.Cookies.Advice' | translate}}</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p data-component="crn-simple-text" id="crn-simple-text-descriptionUse-topic1" class="col-md-12">{{'Privacy.view.Cookies.Modal.DescriptionUse.Topic1' | translate}}</p>
+                        <p data-component="crn-simple-text" id="crn-simple-text-descriptionUse-topic2" class="col-md-12">{{'Privacy.view.Cookies.Modal.DescriptionUse.Topic2' | translate}}</p>
+                        <p data-component="crn-simple-text" id="crn-simple-text-descriptionUse-topic3" class="col-md-12">{{'Privacy.view.Cookies.Modal.DescriptionUse.Topic3' | translate}}</p>
+                        <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-cookies-accept">
+                            <button class="btn k-button btn-block btn-primary" ng-click="cronapi.client('js.blockly.privacy.Cookies.setPreference').names().run()" xattr-fullsize="btn-block" xattr-theme="btn-primary" xattr-disabled="">
+                                <i class="glyphicon glyphicon-ok" icon-theme=""></i>
+                                <span class="" text-theme="">{{'Privacy.view.Cookies.Accept' | translate}}</span>
+                            </button>
+                        </div>
+                        
+                        <div class="list-group list-group-sm row">
+                            <h1 class="text-center title col-md-12" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-cookies-title-preferences">{{'Privacy.view.Cookies.Modal.Preferences' | translate}}</h1>
+                            <div class="component-holder ng-scope col-md-12" data-component="crn-enterprise-checkbox" id="crn-enterprise-checkbox-analytics">
+                                <div class="form-group checkbox-default" checkbox-theme="checkbox-default">
+                                    <input type="checkbox" id="vars.checkboxEssentials" ng-model="vars.checkEssencials" class="k-checkbox" crn-allow-null-values="false" ng-false-value="false" ng-true-value="true" ng-required="true" ng-initial-value="true" disabled>
+                                    <label class="k-checkbox-label" for="vars.checkboxEssentials">{{'Privacy.view.Cookies.Modal.Essentials' | translate}} </label>
+                                    <label class="mandatory">({{'Privacy.view.Cookies.Modal.Mandatory' | translate}})</label>
+                                </div>
+                            </div>
+                            <p data-component="crn-simple-text" id="crn-simple-text-description-essentials" class="col-md-12">{{'Privacy.view.Cookies.Modal.DescriptionEssentials' | translate}}</p>
+                            <div class="component-holder ng-scope col-md-12" data-component="crn-enterprise-checkbox" id="crn-enterprise-checkbox-analytics">
+                                <div class="form-group checkbox-default" checkbox-theme="checkbox-default">
+                                    <input type="checkbox" id="vars.checkboxMarketing" ng-model="vars.checkMarketing" class="k-checkbox" crn-allow-null-values="false" ng-false-value="false" ng-true-value="true" ng-required="true" ng-initial-value="true">
+                                    <label class="k-checkbox-label" for="vars.checkboxMarketing">{{'Privacy.view.Cookies.Modal.Marketing' | translate}}</label>
+                                </div>
+                            </div>
+                            <p data-component="crn-simple-text" id="crn-simple-text-description-marketing" class="col-md-12">{{'Privacy.view.Cookies.Modal.DescriptionMarketing' | translate}}</p>
+                            <div class="component-holder ng-scope col-md-12" data-component="crn-enterprise-checkbox" id="crn-enterprise-checkbox-analytics">
+                                <div class="form-group checkbox-default" checkbox-theme="checkbox-default">
+                                    <input type="checkbox" id="vars.checkboxAnalytics" ng-model="vars.checkAnalytics" class="k-checkbox" crn-allow-null-values="false" ng-false-value="false" ng-true-value="true" ng-required="true" ng-initial-value="true">
+                                    <label class="k-checkbox-label" for="vars.checkboxAnalytics">{{'Privacy.view.Cookies.Modal.Analytics' | translate}}</label>
+                                </div>
+                            </div>
+                            <p data-component="crn-simple-text" id="crn-simple-text-description-analytics" class="col-md-12">{{'Privacy.view.Cookies.Modal.DescriptionAnalytics' | translate}}</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-cookies-save-preferences">
+                            <button class="btn k-button btn-block btn-primary" ng-click="cronapi.client('js.blockly.privacy.Cookies.setPreference').names().run()" xattr-fullsize="btn-block" xattr-theme="btn-primary" xattr-disabled="">
+                                <i class="glyphicon glyphicon-wrench" icon-theme=""></i>
+                                <span class="" text-theme="">{{'Privacy.view.Cookies.Modal.SavePreferences' | translate}}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

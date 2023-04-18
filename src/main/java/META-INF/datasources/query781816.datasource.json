@@ -1,0 +1,120 @@
+{
+  "customId": "saidaCustom",
+  "queryName": "Saida Customizada Produto",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Saida",
+  "entityFullName": "app.entity.Saida",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Saida",
+        "alias": "s",
+        "namespace": "app.entity.Saida"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "s"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "user": {
+      "type": "server",
+      "blocklyMethod": "ObertIDUsuarioLogado",
+      "blocklyClass": "blockly.Usuario",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Usuario",
+        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObertIDUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "produto": null,
+    "quantidade": null,
+    "user_name": null,
+    "produto_nome": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "user": null,
+    "produto": null,
+    "quantidade": null,
+    "user_name": null,
+    "produto_nome": null
+  },
+  "security": {
+    "id": null,
+    "user": null,
+    "produto": null,
+    "quantidade": null,
+    "user_name": null,
+    "produto_nome": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query781816/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}

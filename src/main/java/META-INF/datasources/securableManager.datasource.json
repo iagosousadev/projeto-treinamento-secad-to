@@ -1,0 +1,127 @@
+{
+  "audit": true,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "securableManager",
+  "defaultValues": {
+    "application": null,
+    "id": null,
+    "name": null
+  },
+  "defaultValuesProperties": {
+    "application": null,
+    "id": null,
+    "name": null
+  },
+  "entityFullName": "app.entity.Securable",
+  "entitySimpleName": "Securable",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "OR",
+      "not": false,
+      "rules": [
+        {
+          "field": "s.application.id",
+          "id": "s.application.id",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":applicationId",
+          "valueIsField": false
+        },
+        {
+          "field": "s.application",
+          "id": "s.application",
+          "input": "text",
+          "operator": "is_null",
+          "type": "string",
+          "value": null,
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "s",
+        "entity": "Securable",
+        "namespace": "app.entity.Securable"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "s",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Gerenciador de Permissionáveis",
+  "queryParamsValues": [
+    {
+      "fieldName": "applicationId",
+      "fieldValue": "expression:${application.id}"
+    }
+  ],
+  "security": {
+    "application": null,
+    "id": null,
+    "name": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/securableManager/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": [
+      "Administrators"
+    ],
+    "DELETE": true,
+    "DELETEAuthorities": [
+      "Administrators"
+    ],
+    "FILTER": true,
+    "FILTERAuthorities": [
+      "Administrators"
+    ],
+    "GET": true,
+    "GETAuthorities": [
+      "Administrators"
+    ],
+    "POST": true,
+    "POSTAuthorities": [
+      "Administrators"
+    ],
+    "PUT": true,
+    "PUTAuthorities": [
+      "Administrators"
+    ]
+  }
+}

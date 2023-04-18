@@ -1,0 +1,36 @@
+<ion-view class="pane login-bg">
+    <ion-content data-component="crn-ion-content" class="scroll-content" style="padding: 0px;">
+        <div data-replace="true" data-component="crn-container" class="containerMobile " id="crn-container-445023">
+            <h1 data-component="crn-heading" class="component-holder" id="crn-title-signup">{{'Signup.view.Signup' | translate}}</h1>
+
+            <form crn-datasource="" data-component="crn-form" id="crn-form-signup">
+                <div class="component-holder ng-binding ng-scope list list-inset login-mobile" data-component="crn-form" id="crn-form-1034800">
+
+                    <div class="item item-input component-holder" data-component="crn-input" id="crn-input-email">
+                        <input type="email" ng-model="vars.signupEmail" id="signupEmail" aria-label="{{'Signup.view.Email' | translate}}" placeholder="{{'Signup.view.Email' | translate}}" mask="" keyboard="email">
+                    </div>
+
+                    <div class="item item-input component-holder" data-component="crn-input" id="crn-input-nome">
+                        <input type="text" ng-model="vars.signupUsername" id="signupUsername" aria-label="{{'Signup.view.Username' | translate}}" placeholder="{{'Signup.view.Username' | translate}}" mask="" keyboard="username">
+                    </div>
+
+                    <div class="item item-input component-holder" data-component="crn-input" id="crn-input-senha">
+                        <input type="password" ng-model="vars.signupPassword" id="signupPassword" aria-label="{{'Users.view.Senha' | translate}}" placeholder="{{'Users.view.Senha' | translate}}" mask="" keyboard="password">
+                    </div>
+
+                    <div class="item item-input component-holder" data-component="crn-input" id="crn-input-confirmaSenha">
+                        <input type="password" ng-model="vars.signupConfirmPassword" id="signupConfirmPassword" aria-label="{{'Users.view.ConfirmeSuaSenha' | translate}}" placeholder="{{'Users.view.ConfirmeSuaSenha' | translate}}" mask="" keyboard="password">
+                    </div>
+
+                    <button aria-label="{{'Signup.view.Register' | translate}}" class="button button-light component-holder buttonFooter button-full" type="submit" xattr-fullsize="button-full" xattr-theme="button-light" ng-click="cronapi.client('js.blockly.auth.UserControl.signUp').names('8df902ea', '0c25d725', '9c203fbf', '067b073b').run(vars.signupUsername, vars.signupEmail, vars.signupPassword, vars.signupConfirmPassword)" data-component="crn-button" id="crn-button-signup" xattr-size="">
+                        <i class="" xattr-icon-theme=""></i> 
+                        <span>{{'Signup.view.Register' | translate}}</span> 
+                    </button>
+                    
+                    <a href="#/app/login" aria-label="{{'Signup.view.Back' | translate}}" class="" style="display:block" xattr-fullsize="display:block;" data-replace="true" data-component="crn-anchor" id="go-back-login">Voltar</a>
+                    
+                </div>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>
